@@ -23,11 +23,11 @@ partsArray := apex_util.string_to_table(snils, '-');
   dbms_output.put_line(ControlArray(1));
   control := ControlArray(2);   
   dbms_output.put_line('Контроль минимального номера: ');
-  if 1 >= TO_NUMBER(partsArray(1)) then
+  if 1 > TO_NUMBER(partsArray(1)) then
         error := true; 
-        if 1 >= TO_NUMBER(partsArray(2)) then
+        if 1 > TO_NUMBER(partsArray(2)) then
             error := true;
-            if 998 >= TO_NUMBER(ControlArray(1)) then
+            if 998 > TO_NUMBER(ControlArray(1)) then
             error := true;
             else error := false;
             end if;
